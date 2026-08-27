@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Story | Global AI Adoption in Education{% endblock %}
+
+{% block head %}
+<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="viz-page">
+    <h1>Data Story</h1>
+    <p>A guided, narrative walkthrough of how AI adoption in education has grown worldwide.</p>
+
+    <div class="viz-container">
+        <tableau-viz
+            id="tableauStory"
+            src="{{ viz_url }}"
+            width="100%"
+            height="800"
+            toolbar="bottom"
+            hide-tabs>
+        </tableau-viz>
+    </div>
+
+    <noscript>
+        <p>This story requires JavaScript. You can also
+        <a href="{{ viz_url }}" target="_blank" rel="noopener">view it directly on Tableau Public</a>.</p>
+    </noscript>
+</section>
+{% endblock %}

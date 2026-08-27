@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Global AI Adoption in Education{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-overlay">
+        <h1>GLOBAL AI STUDENTS PROJECT</h1>
+        <p class="subtitle">Evaluating the Adoption, Usage, and Growth of AI in Education Worldwide</p>
+        <a href="{{ url_for('dashboard') }}" class="cta-button">VIEW DATA INSIGHTS</a>
+    </div>
+</section>
+
+<section class="intro">
+    <h2>About This Project</h2>
+    <p>
+        This project explores how Artificial Intelligence is being adopted across
+        educational institutions worldwide. Explore the interactive
+        <a href="{{ url_for('dashboard') }}">Dashboard</a> for real-time data views,
+        or walk through the guided <a href="{{ url_for('story') }}">Story</a> for a
+        narrative-driven look at global AI adoption trends.
+    </p>
+</section>
+{% endblock %}

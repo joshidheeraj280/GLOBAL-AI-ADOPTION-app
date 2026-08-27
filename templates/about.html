@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}About | Global AI Adoption in Education{% endblock %}
+
+{% block content %}
+<section class="intro">
+    <h1>About the Web Integration</h1>
+    <p>
+        This section demonstrates how to embed <strong>Tableau Dashboards and Stories</strong>
+        within a <strong>Flask web application</strong> to provide interactive, real-time
+        access to AI adoption in education insights. By integrating Tableau's powerful
+        visualization capabilities with Flask's lightweight framework, users can explore
+        dashboards directly in a browser, making the analysis more accessible, shareable,
+        and actionable for educators, policymakers, and researchers.
+    </p>
+
+    <h2>How It Works</h2>
+    <ul>
+        <li><strong>Flask</strong> serves the pages and passes each Tableau view's URL to the templates.</li>
+        <li><strong>Tableau Embedding API v3</strong> (<code>&lt;tableau-viz&gt;</code> web component) renders
+            the live, interactive visualization client-side.</li>
+        <li>Navigation lets users move between the <strong>Dashboard</strong> (data exploration) and the
+            <strong>Story</strong> (guided narrative) views.</li>
+    </ul>
+</section>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Dashboard 2 | Global AI Adoption in Education{% endblock %}
+
+{% block head %}
+<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="viz-page">
+    <h1>Interactive Dashboard 3</h1>
+    <p>Explore additional AI adoption metrics.</p>
+
+    <div class="viz-container">
+        <tableau-viz
+            id="tableauDashboard3"
+            src="{{ viz_url }}"
+            width="100%"
+            height="800"
+            toolbar="bottom"
+            hide-tabs>
+        </tableau-viz>
+    </div>
+</section>
+{% endblock %}

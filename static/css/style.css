@@ -1,0 +1,142 @@
+:root {
+    --bg-dark: #0b0e17;
+    --accent: #ff5a1f;
+    --accent-hover: #e64d15;
+    --text-light: #f5f5f5;
+    --text-muted: #b7bcc8;
+    --border: #e2e2e2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #222;
+    background: #fafafa;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background: var(--bg-dark);
+    color: var(--text-light);
+}
+
+.nav-brand a {
+    color: var(--text-light);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-left: 28px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--text-light);
+}
+
+/* ---------- Hero (home page) ---------- */
+.hero {
+    height: 70vh;
+    min-height: 420px;
+    background: radial-gradient(circle at 30% 30%, #1a1f33, var(--bg-dark) 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+}
+
+.hero-overlay h1 {
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.hero-overlay .subtitle {
+    color: var(--text-muted);
+    margin-bottom: 28px;
+    font-size: 1.05rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+}
+
+.cta-button:hover {
+    background: var(--accent-hover);
+}
+
+/* ---------- Intro / About ---------- */
+.intro {
+    max-width: 800px;
+    margin: 48px auto;
+    padding: 0 24px;
+    line-height: 1.7;
+}
+
+.intro h1, .intro h2 {
+    margin-bottom: 16px;
+}
+
+.intro ul {
+    margin: 12px 0 0 20px;
+}
+
+.intro li {
+    margin-bottom: 8px;
+}
+
+/* ---------- Viz pages (Dashboard / Story) ---------- */
+.viz-page {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+.viz-page h1 {
+    margin-bottom: 8px;
+}
+
+.viz-page p {
+    color: #555;
+    margin-bottom: 24px;
+}
+
+.viz-container {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+    background: var(--bg-dark);
+    margin-top: 40px;
+    font-size: 0.85rem;
+}
