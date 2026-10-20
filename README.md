@@ -21,8 +21,10 @@ Open **http://127.0.0.1:5000**
    `https://public.tableau.com/views/<WorkbookName>/<ViewName>`
 3. Paste it into `app.py`:
    ```python
-   TABLEAU_DASHBOARD_URL = "https://public.tableau.com/views/YourWorkbook/YourDashboard"
-   TABLEAU_STORY_URL = "https://public.tableau.com/views/YourWorkbook/YourStory"
+   TABLEAU_DASHBOARD2_URL = "https://public.tableau.com/views/GLOBALAIADOPTIONINEDUCATION/Dashboard2"
+TABLEAU_DASHBOARD3_URL = "https://public.tableau.com/views/GLOBALAIADOPTIONINEDUCATION/Dashboard3"
+   TABLEAU_STORY1_URL = "https://public.tableau.com/views/GLOBALAIADOPTIONINEDUCATION/Story1" 
+TABLEAU_STORY2_URL = "https://public.tableau.com/views/GLOBALAIADOPTIONINEDUCATION/Story2"
    ```
 4. Restart the app — the `<tableau-viz>` component in `dashboard.html` / `story.html`
    will render your live, interactive visualization.
