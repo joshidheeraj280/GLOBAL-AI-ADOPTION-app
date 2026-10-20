@@ -18,7 +18,7 @@ Open **http://127.0.0.1:5000**
 
 1. Publish your workbook to **Tableau Public** (or Server/Online).
 2. Open the Dashboard, click **Share**, copy the view URL — it looks like:
-   `https://public.tableau.com/views/<WorkbookName>/<ViewName>`
+   `https://public.tableau.com/views/GLOBALAIADOPTIONINEDUCATION/Dashboard2"`
 3. Paste it into `app.py`:
    ```python
    TABLEAU_DASHBOARD2_URL = "https://public.tableau.com/views/GLOBALAIADOPTIONINEDUCATION/Dashboard2"
