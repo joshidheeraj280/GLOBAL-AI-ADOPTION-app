@@ -45,11 +45,3 @@ global-ai-adoption-app/
     └── css/style.css        # styling
 ```
 
-## Progress checklist (matches "Web Integration" subtask)
-
-- [x] Flask app scaffolded with routes
-- [x] Tableau Embedding API v3 wired into Dashboard page
-- [x] Tableau Embedding API v3 wired into Story page
-- [x] Nav + landing page styled to match project cover
-- [ ] Swap in your real published Tableau view URLs
-- [ ] Deploy (e.g. Render, PythonAnywhere, or Heroku) for a public link
